@@ -1,3 +1,5 @@
 server
+!server/
 client
+!client/
 build

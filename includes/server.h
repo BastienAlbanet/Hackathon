@@ -6,6 +6,7 @@
 #include <unistd.h>
 #include <arpa/inet.h>
 #include <signal.h>
+#include <sys/stat.h>
 #include "zlib.h"
 
 #include "common.h"
@@ -16,11 +17,13 @@
 #define MAX_CONNECTIONS			128
 
 #define DATAS_FOLDER			"datas/"
+#define TEMP_FOLDER				"/tmp/archives/"
 
 
 
 
 int handle_client(int *sockfd_ptr);
 
+int gzip(char *file_name);
 
 #endif
