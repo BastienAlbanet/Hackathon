@@ -11,6 +11,7 @@ int send_file(int sockfd, int filefd) {
 			return (-1);
 		}
 	}
+	printf("Sending file ok\n");
 	return (0);
 }
 

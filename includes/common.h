@@ -17,6 +17,13 @@
 #define SEND_CMD_STR	"SEND "
 #define GET_CMD_STR		"GET "
 
+#define VALID_FORMAT			".tar.gz"
+
+
+typedef enum {
+    FALSE,
+    TRUE
+} bool_t;
 
 extern char SEND_FILE_FLAG;
 extern char GET_FILE_FLAG;
@@ -24,5 +31,8 @@ extern char GET_FILE_FLAG;
 
 int send_file(int sockfd, int filefd);
 int get_file(int sockfd, int filefd);
+
+//tool.c
+bool_t name_is_targz(char *path);
 
 #endif

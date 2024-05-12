@@ -13,9 +13,9 @@
 #define PORT 8080
 
 #define CONNECT_REQ_QUEUE_SIZE	1024
-#define MAX_CONNECTIONS		128
+#define MAX_CONNECTIONS			128
 
-#define DATAS_FOLDER		"datas/"
+#define DATAS_FOLDER			"datas/"
 
 
 
